@@ -1,0 +1,56 @@
+#form {
+    background-image: url(../img/DSCN8280.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: 100%;
+}
+
+.form-controle {
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #55efc4;
+    border-color: #55efc4;
+}
+
+.btn-primary:hover {
+    background-color: #00b894;
+    border-color: #00b894;
+}
+
+.btn-warning {
+    background-color: #74b9ff;
+    border-color: #74b9ff;
+}
+
+.btn-warning:hover {
+    background-color: #0984e3;
+    border-color: #0984e3;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+}
+
+.btn-danger {
+    background-color: #ff7675;
+    border-color: #ff7675;
+}
+
+.btn-danger:hover {
+    background-color: #e17055;
+    border-color: #e17055;
+}
+
+.navbar {
+    background-color: #b2bec3;
+}
+
+.col-md-6 {
+    overflow: hidden;
+}
