@@ -1,7 +1,7 @@
 <?php 
 require_once("components/header.php");
 require_once("components/navbar.php");
-?>
+?> //ab
 <div class="container">
     <div class="row">
         <div class="col-md-12">
