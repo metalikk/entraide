@@ -5,7 +5,8 @@ $config = [
     "DB_USER" => "root",
     "DB_PASSWORD" => "",
     "SECRET_KEY" => "x4P4C9UmDLWvGcUvrePk",
-    "ROLES" => ["jojoUser", "jojoHelper"]
+    "ROLES" => ["jojoUser", "jojoHelper"],
+    "STATUTS" =>  ["created", "in_progress", "archived"]
 ];
 
 
