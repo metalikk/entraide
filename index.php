@@ -1,13 +1,16 @@
 <?php 
 session_start();
+
+if(!isset($_SESSION ["pseudo"])){
+  header("Location: login.php");
+  }
+  
 require_once("components/header.php");
 require_once("components/navbar.php");
 require_once("configs/database.php");
 require_once("configs/config.php");
 require_once("functions/getUser.php");
-if(!isset($_SESSION ["pseudo"])){
-header("Location: login.php");
-}
+
 ?>
 
 <div class="container">
@@ -29,7 +32,7 @@ header("Location: login.php");
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <a href="advert-page.php">
+              <a href="advert-page.php?id=<?= $result["id"] ?>">
                 <h5 class ="card-tilte"><?= $result["title"]?></h5>
               </a>
               <p class ="card-text">
@@ -51,6 +54,7 @@ header("Location: login.php");
       </div>
 
     </div>
+    
 
       
         <?php endwhile ?>

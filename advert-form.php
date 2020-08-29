@@ -6,12 +6,12 @@ require_once("components/navbar.php");
     <div class="row">
         <div class="col-md-12">
             <h1>Ajouter une annonce</h1>
-    <form action="" class="form-group">
+    <form action="functions/addAdvert.php" method="POST" class="form-group">
         <div class="form-group">
             <input type="text" name="title" class="form-control" placeholder="Entrez un titre" id="">
         </div>
         <div class="form-group">
-            <input type="text" name="image" class="form-control" placeholder="Entrez une url" id="">
+            <input type="text" name="image_url" class="form-control" placeholder="Entrez une url" id="">
         </div>
         <div class="form-group">
             <textarea name="description" class="form-control" placeholder="Entrez une description"></textarea>
@@ -33,5 +33,5 @@ require_once("components/navbar.php");
 
 
 <?php
- require_once("components/footer.php");
+require_once("components/footer.php");
 ?>
