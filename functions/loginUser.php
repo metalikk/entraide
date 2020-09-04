@@ -18,6 +18,7 @@ if(!$result){
     session_start();
     $_SESSION["pseudo"] = $result["pseudo"];
     $_SESSION["id"] = $result["id"];
+    $_SESSION["role"] = $result["role"];
 
     header("Location: ../index.php");
 }
