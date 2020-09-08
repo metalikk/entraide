@@ -33,7 +33,7 @@ $user = getUser($result["author_id"]);
 
         <?php if ($_SESSION["id"] === $result["author_id"] && $result["statut"] !== $config["STATUTS"][2]): ?>
         <a href = "functions/deleteAdvert.php" class ="btn btn-danger"> Supprimer </a>
-        <a href = ""class ="btn btn-primary"> Archiver </a>
+        <a href = "functions/updateAdvert.php?advert_id=<?=$result["id"]?> &action=archived"class ="btn btn-primary"> Archiver </a>
         <?php endif ?>
 
         <?php if ($_SESSION["id"] === $result["author_id"] && $result["statut"] === $config["STATUTS"][2]): ?>
@@ -44,12 +44,12 @@ $user = getUser($result["author_id"]);
         <!-- afficher le bouton participer --> 
 
         <?php if ($_SESSION["role"] === $config["ROLES"][1]  &&  $result["statut"] === $config["STATUTS"][0]): ?>
-        <a href = ""class ="btn btn-primary"> Participer </a>
+        <a href = "functions/updateAdvert.php?advert_id=<?=$result["id"]?> &action=in_progress"class ="btn btn-primary"> Participer </a>
         <?php endif ?>
 
         <?php if ($_SESSION["role"] === $config["ROLES"][1]  &&  $result["statut"] === $config["STATUTS"][1]): ?>
         <?php if ($_SESSION ["id"] === $result["helper_id"]) : ?>
-        <a href = ""class ="btn btn-danger"> Annuler </a>
+        <a href = "functions/updateAdvert.php?advert_id=<?=$result["id"]?> &action=created"class ="btn btn-danger"> Annuler </a>
         <?php else : ?>
          On s'occupe de moi 
          <?php endif ?>
